@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        display: flex;
+        align-items: center;
+        height: 100vh;
+        justify-content: center;
+      }
+      input {
+        margin: 10px;
+        padding: 20px;
+        width: 60px;
+        border: none;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+        background-color: #964343;
+        color: #ffffff;
+        font-size: 20px;
+      }
+      .calcu {
+        width: 270px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="calc">
+      <form name="cal">
+        <input type="text" name="res" id="calci" class="calcu" /><br /><br />
+
+        <input type="button" value="1" onclick="cal.res.value += '1'" />
+        <input type="button" value="2" onclick="cal.res.value += '2'" />
+        <input type="button" value="3" onclick="cal.res.value += '3'" />
+        <input type="button" value="+" onclick="cal.res.value += '+'" /><br /><br />
+        <input type="button" value="4" onclick="cal.res.value += '4'" />
+        <input type="button" value="5" onclick="cal.res.value += '5'" />
+        <input type="button" value="6" onclick="cal.res.value += '6'" />
+        <input type="button" value="-" onclick="cal.res.value += '-'" /><br /><br />
+        <input type="button" value="7" onclick="cal.res.value += '7'" />
+        <input type="button" value="8" onclick="cal.res.value += '8'" />
+        <input type="button" value="9" onclick="cal.res.value += '9'" />
+        <input type="button" value="X" onclick="cal.res.value += '*'" /><br /><br />
+        <input type="button" value="=" onclick="cal.res.value =eval(cal.res.value)" />
+        <input type="button" value="0" onclick="cal.res.value += '0'" />
+        <input type="button" value="C" onclick="cal.res.value = ''" />
+        <input type="button" value="/" onclick="cal.res.value += '/'" />
+      </form>
+    </div>
+  </body>
+</html>
